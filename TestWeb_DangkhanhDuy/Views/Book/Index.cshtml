@@ -1,0 +1,36 @@
+﻿@model List<TestWeb_DangkhanhDuy.Models.Book>
+
+<h2>Danh sách sách</h2>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">@TempData["msg"]</div>
+}
+
+<a asp-action="Create" class="btn btn-primary mb-3">+ Thêm sách</a>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Tên sách</th>
+        <th>Tác giả</th>
+        <th>Giá bìa</th>
+        <th>Số lượng</th>
+        <th>Hành động</th>
+    </tr>
+    @foreach (var b in Model)
+    {
+        <tr>
+            <td>@b.Id</td>
+            <td>@b.TenSach</td>
+            <td>@b.TacGia</td>
+            <td>@b.GiaBia.ToString("N0") đ</td>
+            <td>@b.SoLuong</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@b.Id" class="btn btn-sm btn-warning">Sửa</a>
+                <a asp-action="Delete" asp-route-id="@b.Id" class="btn btn-sm btn-danger"
+                   onclick="return confirm('Bạn có chắc chắn muốn xoá?')">Xoá</a>
+            </td>
+        </tr>
+    }
+</table>
