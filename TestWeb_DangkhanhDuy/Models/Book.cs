@@ -11,19 +11,19 @@ namespace TestWeb_DangkhanhDuy.Models
         public int Id { get; set; }
 
         [Required]
-        public string TenSach { get; set; }
+        public string Title { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 5)]
-        public string TacGia { get; set; }
+        public string Author { get; set; }
 
         [Required]
         [Range(0, double.MaxValue)]
-        public double GiaBia { get; set; }
+        public double Price { get; set; }
 
         [Required]
         [Range(0, int.MaxValue)]
-        public int SoLuong { get; set; }
+        public int Quantity { get; set; }
     }
 }
 

@@ -16,11 +16,11 @@ namespace TestWeb_DangkhanhDuy.Controllers
             if (!_context.Books.Any())
             {
                 _context.Books.AddRange(
-                    new Book { TenSach = "C# Cơ bản", TacGia = "Nguyễn Văn A", GiaBia = 50000, SoLuong = 10 },
-                    new Book { TenSach = "ASP.NET Core", TacGia = "Lê Thị B", GiaBia = 75000, SoLuong = 8 },
-                    new Book { TenSach = "SQL Server", TacGia = "Trần Văn C", GiaBia = 60000, SoLuong = 12 },
-                    new Book { TenSach = "HTML CSS", TacGia = "Phạm Thị D", GiaBia = 40000, SoLuong = 15 },
-                    new Book { TenSach = "Javascript", TacGia = "Đỗ Văn E", GiaBia = 65000, SoLuong = 5 }
+                    new Book { Title = "C# Cơ bản", Author = "Nguyễn Văn A", Price = 50000, Quantity = 10 },
+                    new Book { Title = "ASP.NET Core", Author = "Lê Thị B", Price = 75000, Quantity = 8 },
+                    new Book { Title = "SQL Server", Author = "Trần Văn C", Price = 60000, Quantity = 12 },
+                    new Book { Title = "HTML CSS", Author = "Phạm Thị D", Price = 40000, Quantity = 15 },
+                    new Book { Title = "Javascript", Author = "Đỗ Văn E", Price = 65000, Quantity = 5 }
                 );
                 _context.SaveChanges();
             }

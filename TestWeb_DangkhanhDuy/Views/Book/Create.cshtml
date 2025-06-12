@@ -4,24 +4,24 @@
 
 <form asp-action="Create" method="post">
     <div class="mb-3">
-        <label asp-for="TenSach"></label>
-        <input asp-for="TenSach" class="form-control" />
-        <span asp-validation-for="TenSach" class="text-danger"></span>
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
     </div>
     <div class="mb-3">
-        <label asp-for="TacGia"></label>
-        <input asp-for="TacGia" class="form-control" />
-        <span asp-validation-for="TacGia" class="text-danger"></span>
+        <label asp-for="Author"></label>
+        <input asp-for="Author" class="form-control" />
+        <span asp-validation-for="Author" class="text-danger"></span>
     </div>
     <div class="mb-3">
-        <label asp-for="GiaBia"></label>
-        <input asp-for="GiaBia" class="form-control" />
-        <span asp-validation-for="GiaBia" class="text-danger"></span>
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
     </div>
     <div class="mb-3">
-        <label asp-for="SoLuong"></label>
-        <input asp-for="SoLuong" class="form-control" />
-        <span asp-validation-for="SoLuong" class="text-danger"></span>
+        <label asp-for="Quantity"></label>
+        <input asp-for="Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-success">Lưu</button>
     <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
